@@ -63,14 +63,8 @@ def fetch_dart_data():
     print(f"[Info] 전체 타겟 상장사: {len(df_master)} 개")
     print(f"[Info] 이미 수집 완료된 상장사: {len(completed_codes)} 개")
     
-    # (사용자 요청) 우선 100개 그룹으로 나누어 수집 테스트 진행
-    limit_count = 100
-    current_count = 0
-    
+    # 전체 기업 대상 수집 (checkpoint 기반으로 이어서 진행)
     for idx, row in df_master.iterrows():
-        if current_count >= limit_count:
-             print(f"[Info] 지정된 테스트 횟수({limit_count})를 달성하여 종료합니다.")
-             break
              
         comp_name = str(row.get('회사명', '')).strip()
         code = str(row.get('종목코드', '')).zfill(6)
@@ -120,7 +114,7 @@ def fetch_dart_data():
             "financials": {}
         }
         
-        current_count += 1
+        
         
         # 1. 재무 데이터 수집
         try:
