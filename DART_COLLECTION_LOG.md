@@ -1,5 +1,11 @@
 # DART 제조업 상장사 데이터 수집 프로젝트 (Dart_data_collect)
 
+## 0. Current Policy (2026-02-26)
+- `industry_classification` in each `raw_*.json` stores only one field: `"소분류"`.
+- `"소분류"` value is sourced directly from column D (`업종`) of `상장법인목록.xls`.
+- `data/stock_master_list.csv` is deprecated and no longer used by collection logic.
+- `collect_dart_manufacturing.py` now reads `상장법인목록.xls` directly as the single source of industry label input.
+
 본 문서는 V-Search 프로젝트에서 파생된 "DART 원시 데이터 수집 파이프라인"의 구축 배경, 목적, 방법론, 그리고 개발 과정에서 마주한 애로사항 및 해결 과정을 상세히 기록합니다. 이 폴더(`Dart_data_collect`)는 독립적인 깃허브 Repository 업로드용으로 분리되었습니다.
 
 ## 1. 프로젝트 목적
