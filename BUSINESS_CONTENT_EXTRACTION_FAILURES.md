@@ -1,10 +1,10 @@
-# ???? ?? ?? ?? ??
+﻿# Business Content Extraction Failure List
 
-- ???: 2026-02-27 17:24:37
-- ?? ??: `data/collection_status.json`
-- ??: **24?**
+- Generated At: 2026-02-27 17:29:00
+- Source: `data/collection_status.json`
+- Count: **24**
 
-| ???? | ??? | ?? | ?? |
+| Stock Code | Company Name | Reason | Detail |
 |---|---|---|---|
 | 000120 | CJ대한통운 | business_section_not_found | rcept_no=20250317001020 |
 | 000700 | 유수홀딩스 | business_section_not_found | rcept_no=20250331003248 |

@@ -1,10 +1,10 @@
-# 2024 ????? ???/??? ?? ??
+﻿# Missing 2024 Business Report List
 
-- ???: 2026-02-27 17:24:37
-- ?? ??: `data/collection_status.json`
-- ??: **62?**
+- Generated At: 2026-02-27 17:29:00
+- Source: `data/collection_status.json`
+- Count: **62**
 
-| ???? | ??? | ?? | ?? |
+| Stock Code | Company Name | Reason | Detail |
 |---|---|---|---|
 | 0001A0 | 덕양에너젠 | no_disclosure_from_2024 |  |
 | 0004V0 | 엔비알모션 | no_2024_business_report |  |
